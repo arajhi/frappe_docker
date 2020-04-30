@@ -9,7 +9,7 @@ services:
     
     volumes:
       - ./conf/mariadb-conf.d:/etc/mysql/conf.d
-      - /var/lib/mysql
+      - ./data:/var/lib/mysql
     
     ports:
       - "3307:3306" # MariaDB Port
@@ -78,3 +78,5 @@ services:
       - redis-socketio
 
     container_name: frappe
+volumes:
+  data:
