@@ -29,16 +29,28 @@ Unfortunately, this container is not currently suited for a production environme
     ```
 
     **Note:** This will take a while, as docker will now build the container.
+4. install our erpnext
+```bash
+    ./dbench get-app erpnext https://@github.com/arajhi/erpnext.git
+```
 
-3. Add a new site and start Frappe:
+5. install our menah app
+```bash
+    ./dbench get-app --branch dev menah https://github.com/arajhi/menah.git
+```
+
+6. Add a new site and start Frappe:
 
     ```bash
     ./dbench new-site site1.local
+    ./dbench --site site1.local install-app erpnext
+    ./dbench --site site1.local install-app menah
     ./dbench setup hosts
     ./dbench start
     ```
+ 
 
-4. Use Frappe:
+7. Use Frappe:
     Open your browser to `localhost:8000/login`. Then log in using the username `Administrator` and the password `admin`.
 
 ### Basic Usage of `./dbench`
