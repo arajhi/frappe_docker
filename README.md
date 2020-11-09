@@ -31,7 +31,7 @@ Unfortunately, this container is not currently suited for a production environme
     **Note:** This will take a while, as docker will now build the container.
 4. install our erpnext
 ```bash
-    ./dbench get-app erpnext https://@github.com/arajhi/erpnext.git
+    ./dbench get-app erpnext https://github.com/arajhi/erpnext.git
 ```
 
 5. install our menah app
