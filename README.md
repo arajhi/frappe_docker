@@ -17,7 +17,7 @@ Unfortunately, this container is not currently suited for a production environme
 1. Clone this repo and change your working directory to it:
 
     ```bash
-    git clone https://github.com/frappe/frappe_docker.git
+    git clone https://github.com/arajhi/frappe_docker.git
     cd frappe_docker/
     ```
 
