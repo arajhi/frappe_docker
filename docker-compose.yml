@@ -78,3 +78,9 @@ services:
       - redis-socketio
 
     container_name: frappe
+    networks:
+      - menah
+      
+networks:
+  menah:
+    driver: bridge
